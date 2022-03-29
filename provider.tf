@@ -7,6 +7,22 @@ terraform {
   }
 
   required_version = ">= 0.14.9"
+
+    backend "remote" {
+
+    hostname     = "app.terraform.io"
+
+    organization = "carlospleon"
+
+
+
+    workspaces {
+
+      name = "IacChallenge"
+
+    }
+
+  }
 }
 
 provider "aws" {
