@@ -1,3 +1,23 @@
+terraform {
+
+  backend "remote" {
+
+    hostname     = "app.terraform.io"
+
+    organization = "carlospleon"
+
+
+
+    workspaces {
+
+      name = "IacChallenge"
+
+    }
+
+  }
+
+}
+
 module "vpc" {
   source     = "./modules/vpc"
   cidr_block = "10.0.0.0/16"
