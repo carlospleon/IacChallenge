@@ -1,3 +1,5 @@
+terraform {
+
   backend "remote" {
 
     hostname     = "app.terraform.io"
@@ -13,6 +15,8 @@
     }
 
   }
+
+}
 
 module "vpc" {
   source     = "./modules/vpc"
