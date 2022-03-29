@@ -2,13 +2,13 @@
 
     hostname     = "app.terraform.io"
 
-    organization = "salomon"
+    organization = "carlospleon"
 
 
 
     workspaces {
 
-      name = "iacChallenge"
+      name = "IacChallenge"
 
     }
 
